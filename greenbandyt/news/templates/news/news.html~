@@ -7,7 +7,7 @@
 {% block content %}
 
 <h1 style="text-align: center; color: #333; font-weight: bold; font-size: 2em; margin-bottom: 10px;">
-    Добро пожаловать на страницу новостей 222
+    Добро пожаловать на страницу новостей
 </h1>
 <br>
 {% for new in news %}
