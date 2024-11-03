@@ -1,0 +1,45 @@
+.form-container {
+    background-color: #f9f3e7; /* Цвет фона для соответствия общей теме */
+    border: 1px solid #e0b387;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Увеличенная ширина формы */
+    margin: 0 auto; /* Центровка формы */
+}
+
+label {
+    color: #e67e22; /* Оранжевый цвет для заголовков */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+}
+
+textarea, input[type="text"] {
+    width: 100%; /* Заполнение всей ширины контейнера */
+    height: 150px; /* Уменьшенная высота */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Расстояние между полями */
+}
+
+input[type="text"] {
+    height: 30px; /* Оптимальная высота для текстовых полей */
+}
+
+button {
+    background-color: #e67e22; /* Оранжевый цвет фона */
+    border: 2px solid #cf6d1b; /* Темная рамка */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px; /* Закругленные углы */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #cf6d1b; /* Более темный цвет при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень при наведении */
+}

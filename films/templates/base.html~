@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        .navbar {
+            background-color: #FF7F50; /* Оранжевый цвет */
+        }
+        .navbar-brand {
+            color: #FF0000; /* Ярко-красный цвет для названия проекта */
+            font-weight: bold;
+        }
+        .navbar-brand:hover {
+            color: #FF6347; /* Более мягкий оттенок красного при наведении */
+        }
+        .nav-link {
+            color: #ffffff;
+        }
+        .nav-link:hover {
+            color: #FFD700; /* Золотой цвет при наведении */
+        }
+        .btn-outline-light {
+            border-color: #ffffff;
+        }
+        .btn-outline-light:hover {
+            background-color: #ffffff;
+            color: #FF7F50;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand">Movie Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'movies_list' %}">Список фильмов</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'add_movie' %}">Добавить фильм</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
